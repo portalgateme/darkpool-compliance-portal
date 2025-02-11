@@ -72,9 +72,9 @@ export const networkConfig: { [chainId: number]: NetworkConfig } = {
     },
   },
   [ChainId.HARDHAT]: {
-    accessPortal: '0x9015957A2210BB8B10e27d8BBEEF8d9498f123eF',
+    accessPortal: '0x7C4BDA48bd4C9ac4FbcC60deEb66bf80d35705f0',
     complianceManager: '0x0',
-    darkpoolAssetManager: '0xDf66AB853Fc112Ec955531bd76E9079db30A0e27',
+    darkpoolAssetManager: '0x2D6E6A6430F0121d6949D743DF54730b40C5c74F',
     explorerUrl: {
       tx: 'https://sepolia.etherscan.io/tx/',
       address: 'https://sepolia.etherscan.io/address/',
