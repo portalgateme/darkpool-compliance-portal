@@ -1,4 +1,6 @@
 import { NetworkConfig, ChainId } from '../types'
+import hardhat from './contracts/hardhat.json'
+import hardhatBase from './contracts/hardhatBase.json'
 
 export const networkConfig: { [chainId: number]: NetworkConfig } = {
   [ChainId.MAINNET]: {
@@ -72,7 +74,7 @@ export const networkConfig: { [chainId: number]: NetworkConfig } = {
     },
   },
   [ChainId.HARDHAT]: {
-    accessPortal: '0x9015957A2210BB8B10e27d8BBEEF8d9498f123eF',
+    accessPortal: hardhat.accessPortal as `0x${string}`,
     complianceManager: '0x0',
     darkpoolAssetManager: '0xDf66AB853Fc112Ec955531bd76E9079db30A0e27',
     explorerUrl: {
@@ -82,7 +84,7 @@ export const networkConfig: { [chainId: number]: NetworkConfig } = {
     },
   },
   [ChainId.HARDHAT_BASE]: {
-    accessPortal: '0x00B0517de6b2b09aBD3a7B69d66D85eFdb2c7d94',
+    accessPortal: hardhatBase.accessPortal as `0x${string}`,
     complianceManager: '0x0',
     darkpoolAssetManager: '0x045857BDEAE7C1c7252d611eB24eB55564198b4C',
     explorerUrl: {
